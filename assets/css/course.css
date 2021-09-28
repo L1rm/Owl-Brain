@@ -70,3 +70,10 @@
         position: fixed!important;
     }
 }
+
+@media (max-width: 991px) {
+    .dis {
+        opacity: 0!important;
+        position: fixed!important;
+    }
+}
