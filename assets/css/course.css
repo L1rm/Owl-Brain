@@ -67,5 +67,6 @@
 @media (max-width: 991px) {
     .header-scrolled .course-head-card {
         opacity: 0!important;
+        position: fixed!important;
     }
 }
