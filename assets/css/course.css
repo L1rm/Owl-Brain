@@ -1,0 +1,71 @@
+.course-head {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.course-head-card {
+    position: absolute;
+    left: 65%;
+    opacity: 0;
+}
+
+.header-scrolled .course-head-card {
+    transition: opacity 0.5s;
+    opacity: 1!important;
+    max-width: 400px;
+    box-shadow: 0px 5px 30px rgba(22, 29, 84, 0.15);
+}
+
+.dis {
+    transition: opacity 0.5s;
+    opacity: 0!important;
+}
+
+.btn-get-started {
+    line-height: 0;
+    padding: 15px 60px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #000;
+    box-shadow: 0px 5px 30px rgba(22, 29, 84, 0.2);
+}
+
+.btn-get-started:hover {
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.2);
+}
+
+.btn-get-started span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.btn-get-started i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-get-started:hover i {
+    transform: translateX(5px);
+}
+
+.course-title {
+    color: black;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+.course-ul li {
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    .header-scrolled .course-head-card {
+        opacity: 0!important;
+    }
+}
