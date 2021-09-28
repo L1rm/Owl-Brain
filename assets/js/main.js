@@ -1,9 +1,3 @@
-/**
-* Template Name: FlexStart - v1.4.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -90,6 +84,26 @@
     window.addEventListener('load', headerScrolled)
     onscroll(document, headerScrolled)
   }
+
+
+
+  /**
+   * Toggle .header-scrolled class to #header when page is scrolled
+   */
+  let selectH = select('#dis')
+  if (selectH) {
+    const headerScrolled = () => {
+      if (window.scrollY > 100) {
+        selectH.classList.add('dis')
+      } else {
+        selectH.classList.remove('dis')
+      }
+    }
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
+  }
+
+
 
   /**
    * Back to top button
